@@ -1,0 +1,12 @@
+#include <iostream>
+
+int main() {
+  int r, s, b;
+  std::cin >> r >> s >> b; 
+    if (b > r*s){ 
+        std::cout << r*s << " " << b - r*s << std::endl; 
+    } else if (b < r*s ){
+        std::cout << r*s << " " << r*s-b << std::endl;
+         
+    }
+}
