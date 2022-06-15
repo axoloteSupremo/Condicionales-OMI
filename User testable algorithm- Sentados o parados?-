@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std; 
+
+int main() {
+  int r, s, b;
+  cout << "Introduce number of rows:" << endl; 
+  cin >> r; 
+  cout << "Introduce number of seats per row:" << endl;
+  // Determines vacants/tickets
+  cin >> s; 
+  cout << "Introduce number of tickets sold:" << endl;
+  cin >> b; 
+    if (b > r*s){ 
+        cout << r*s << " " << b - r*s << endl; 
+    } else if (b < r*s ){
+        cout << r*s << " " << r*s-b << endl;
+         
+    }
