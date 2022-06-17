@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main() {
+    
+    int A,B,C; 
+    std::cin >> A >> B >> C;
+    int resta1 = abs(A-C), resta2 = abs(B-C); 
+    // Si la resta1 es menor (hay menos distancia)
+    // entre gato y raton, A gana
+    if(resta1 < resta2){
+        std::cout << "gato A" << std::endl;
+    } else if (resta2>resta1){
+        std::cout << "gato B" << std::endl;
+    } else{
+        std::cout << "gato B" << std::endl;
+    }
+    
+    return 0;
+}
